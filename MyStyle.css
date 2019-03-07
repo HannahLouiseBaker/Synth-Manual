@@ -1,0 +1,136 @@
+/* myStyle.css */
+
+/*General*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/*Top Banner*/
+
+#top-section {
+  width: 100%;
+}
+
+#header-img {
+  width: 100%;
+  z-index: 1;
+}
+
+#title h1 {
+  font-size: 80px;
+}
+
+#title p {
+  font-size: 20px;
+}
+
+#title {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  color: white;
+}
+
+/*Menu*/
+
+#nav-bar {
+  float: left;
+  width: 20%;
+  position: fixed;
+}
+
+#nav-bar header {
+  padding: 20px 0 20px 80px;
+}
+
+.nav-link {
+  color: black;
+  padding: 10px 20px 10px 80px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#bottom-link {
+  border-bottom: 1px solid black;
+}
+
+/*Main Section*/
+
+#main-doc {
+  float: right;
+  width: 80%;
+  padding: 40px 80px;
+}
+
+.main-section {
+  padding: 10px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1200px) {
+  #title {
+    top: 30px;
+    left: 40px;
+  }
+
+  #nav-bar header {
+    padding: 20px 0 20px 40px;
+  }
+
+  .nav-link {
+    padding: 10px 20px 10px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  #title h1 {
+    font-size: 50px;
+  }
+
+  #nav-bar {
+    float: none;
+    position: relative;
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+
+  .nav-link {
+    border-right: none;
+  }
+
+  #main-doc {
+    float: none;
+    width: 100%;
+    padding: 20px 40px;
+  }
+
+  .main-section {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 750px) {
+  #title {
+    top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  #title {
+    top: 5px;
+  }
+}
